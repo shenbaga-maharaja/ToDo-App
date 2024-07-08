@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .edit-mode {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center">ToDo Application</h1>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <form id="todo-form" class="form-inline mb-3 d-flex flex-nowrap">
+                    <input type="text" id="todo-input" class="form-control flex-grow-1 mr-2 mb-2 mb-sm-0" placeholder="Add a new task">
+                    <button type="submit" class="btn btn-primary mb-2 mb-sm-0">Add</button>
+                </form>
+                <ul id="todo-list" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
